@@ -11,17 +11,43 @@
 </head>
 
 <body>
-  <div class="logo">
-    <img src="./Assets/Logo.png" alt="Logo de la Tienda">
-    <H1>Herramientas MasterPro</H1>
-  </div>
-  <nav>
+  <header>
+    <div class="logo">
+      <img src="./Assets/Logo.png" alt="Logo de la Tienda">
+      <H1>Herramientas MasterPro</H1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside class="cuenta-carrito">
     <ul>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#ofertas">Ofertas</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#mi-cuenta">👤 Mi cuenta</a></li>
+      <li><a href="#carrito">🛒 Carrito</a></li>
     </ul>
-  </nav>
+  </aside>
+  <main>
+    <aside class="filtros">
+      <h2>Filtrar y Ordenar</h2>
+      <div class="filtros-busqueda">
+        <label for="busqueda">Buscar:</label>
+        <input type="text" id="busqueda" placeholder="Buscar productos...">
+      </div>
+      <div class="filtro-orden">
+        <label for="orden">Ordenar por:</label>
+        <select id="orden">
+          <option value="precio-asc">Precio: Menor a mayo</option>
+          <option value="precio-desc">Precio: Mayor a meno</option>
+          <option value="nombre-asc">Nombre: A-Z</option>
+          <option value="nombre-desc">Nombre: Z-A</option>
+        </select>
+      </div>
+    </aside>
+  </main>
 
 </body>
 

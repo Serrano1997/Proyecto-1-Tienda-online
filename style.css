@@ -196,6 +196,35 @@ h2{
 .contacto form button:hover{
   background-color: #27ae60;
 }
-
+.cuenta-carrito{
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 300px;
+}
+.cuenta-carrito a{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: var(--color-secundario);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1rem;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cuenta-carrito a:hover{
+  background-color:#27ae60 ;
+  transform: scale(1.05);
+}
+.cuenta-carrito ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
 

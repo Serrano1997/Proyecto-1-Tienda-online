@@ -168,6 +168,34 @@ h2{
   background-color:#2980b9 ;
   transform: scale (1.05);
 }
+.contacto form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+.contacto form input,
+.contacto form textarea{
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contacto form button{
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contacto form button:hover{
+  background-color: #27ae60;
+}
 
 
 

@@ -62,5 +62,70 @@ nav ul li a {
 nav ul li a :hover{
   background-color:rgba(255, 255, 255, 0.2); ;
 }
+h2{
+  text-align: center;
+  font-size: var(--font-size-titulo);
+  margin-bottom: 20px;
+  color: var(--color-primario);
+}
+.productos-destacador{
+  padding: 20px;
+  margin-top: 40px;
+}
+.productos-destacador h2{
+  margin-bottom: 30px;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+  padding: 20px;
+  justify-items: center;
+  align-items: stretch;
+  margin-bottom: 40px;
+}
+
+.producto{
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.producto:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.producto h3{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.producto p{
+  font-size: 1.2rem;
+  color: var(--color-primario);
+  margin-bottom: 20px ;
+}
+.producto .btn{
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 12px 25px ;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.producto .btn:hover{
+  background-color: var(--color-primario);
+  transform: scale(1.05);
+}
+
+
 
 

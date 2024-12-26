@@ -125,7 +125,49 @@ h2{
   background-color: var(--color-primario);
   transform: scale(1.05);
 }
-
+ .ofertas {
+  background-color: white ;
+  padding: 20px;
+  margin-top: 40px;
+ }
+ .ofertas ul{
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  justify-content: center;
+ }
+.ofertas ul li{
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  width: 45%;
+}
+.ofertas ul li image{
+  width: 100%;
+  border-radius: 8px;
+}
+.ofertas il li h3{
+  margin-top: 10px
+}
+.ofertas ul li p{
+  font-size: 1.2rem;
+  color: var(--color-primario);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.ofertas ul li .btn{
+  background-color: var(--color-primario);
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.ofertas ul li .btn:hover{
+  background-color:#2980b9 ;
+  transform: scale (1.05);
+}
 
 
 

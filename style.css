@@ -29,9 +29,17 @@ header{
   text-align: center;
   color: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: whap;
 }
+header .logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
 header .logo img{
   width: 100px;
   height: auto;
@@ -68,11 +76,11 @@ h2{
   margin-bottom: 20px;
   color: var(--color-primario);
 }
-.productos-destacador{
+.productos-destacados{
   padding: 20px;
   margin-top: 40px;
 }
-.productos-destacador h2{
+.productos-destacados h2{
   margin-bottom: 30px;
 }
 
@@ -103,6 +111,14 @@ h2{
   transform: translateY(-5px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
+.producto img{
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
 .producto h3{
   font-size: 1.4rem;
   margin-bottom: 10px;
@@ -125,48 +141,57 @@ h2{
   background-color: var(--color-primario);
   transform: scale(1.05);
 }
- .ofertas {
-  background-color: white ;
+ 
+
+.ofertas {
+  background-color: #ecf0f1;
   padding: 20px;
   margin-top: 40px;
- }
- .ofertas ul{
+}
+
+.ofertas ul {
   display: flex;
   gap: 20px;
   list-style-type: none;
-  justify-content: center;
- }
-.ofertas ul li{
+  justify-content: center; 
+}
+
+.ofertas ul li {
   background-color: white;
   padding: 15px;
   text-align: center;
   border-radius: 8px;
   width: 45%;
 }
-.ofertas ul li image{
+
+.ofertas ul li img {
   width: 100%;
   border-radius: 8px;
 }
-.ofertas il li h3{
-  margin-top: 10px
+
+.ofertas ul li h3 {
+  margin-top: 10px;
 }
-.ofertas ul li p{
+
+.ofertas ul li p {
   font-size: 1.2rem;
   color: var(--color-primario);
   margin-top: 10px;
   margin-bottom: 15px;
 }
-.ofertas ul li .btn{
+
+.ofertas ul li .btn {
   background-color: var(--color-primario);
   color: white;
   padding: 10px;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 20px; 
 }
-.ofertas ul li .btn:hover{
-  background-color:#2980b9 ;
-  transform: scale (1.05);
+
+.ofertas ul li .btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); 
 }
 .contacto form{
   display: flex;
@@ -276,4 +301,48 @@ footer .social-media a:hover{
   text-decoration: underline;
 }
 
+@media (max-width: 768px){
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+  header .logo{
+    justify-content: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .productos{
+    grid-template-columns:repeat(2, 1fr);
+  }
+  .cuenta-carrito{
+    width: 90%;
+  }
+  @media ( max-width:375px){
+    header{
+      padding: 10px;
+    }
+    header .logo img{
+      width: 40px;
+    }
+    header .loho h1{
+      font-size: 1.5rem;
+    }
+    nav ul li a {
+      font-size: 0.9rem;
+    }
+    .productos{
+      grid-template-columns: 1fr; 
+    }
+    .filtros{
+      width: 90%;
+    }
+  }
 
+
+}
